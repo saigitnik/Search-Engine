@@ -1,6 +1,5 @@
 import streamlit as st 
 import chromadb
-import re
 from sentence_transformers import SentenceTransformer
 
 collection_name = "Search_Engine"
