@@ -5,11 +5,11 @@ from sentence_transformers import SentenceTransformer
 
 collection_name = "Search_Engine"
 
-chroma_client = chromadb.PersistentClient(path='engine')
+chroma_client = chromadb.PersistentClient(path='Search_Engine')
 
 # get or create the collection
 collection = chroma_client.get_or_create_collection(
-    name="engine",
+    name="Search_Engine",
     embedding_function=collection_name,
     metadata={"hnsw:space": "cosine"},
 )
